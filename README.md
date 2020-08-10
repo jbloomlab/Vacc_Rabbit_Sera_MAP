@@ -1,9 +1,9 @@
-# Comprehensive, residue-level mapping of polyclonal neutralizing antibody responses in BG505 SOSIP trimer vaccinated rabbits
+# High-resolution mapping of the neutralizing and binding specificities of polyclonal rabbit serum elicited by HIV trimer immunizations
 Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah Hilton, P.J Klasse, John Moore, Andrew Ward, Jesse D. Bloom (and likely others)
 
-We performed mutational antigenic profiling of BG505 SOSIP trimer vaccinated rabbit serum, provided by John Moore and PJ Klasse. Our first mutational antigenic profiling analysis of escape from PGT151 using the BF520 env libraries was published [here](http://dx.doi.org/10.1016/j.chom.2017.05.003) in June 2017, and this original analysis is located [in this ipython notebook](https://github.com/adingens/BF520_MutationalAntigenicProfiling_PGT151).
+We performed mutational antigenic profiling of BG505 SOSIP trimer vaccinated rabbit serum, provided by John Moore and PJ Klasse. In collaboration with Payal Pratap and Adrew Ward's group, we also performed emPEM with these matched sera samples. This analysis focuses only on the mutational antigenic profiling data. 
 
-Here, we used BG505.T332N mutant Env libraries, first described and characterized in [Haddox, Dingens et al 2018](https://elifesciences.org/articles/34420). Note that this is matched to the BG505 immunogens, enabling profiling of autologous responses. 
+Our first mutational antigenic profiling analysis of escape from PGT151 using the BF520 env libraries was published [here](http://dx.doi.org/10.1016/j.chom.2017.05.003) in June 2017, and this original analysis is located [in this ipython notebook](https://github.com/adingens/BF520_MutationalAntigenicProfiling_PGT151). Here, we used BG505.T332N mutant Env libraries, first described and characterized in [Haddox, Dingens et al 2018](https://elifesciences.org/articles/34420). Note that this is matched to the BG505 immunogens, enabling profiling of autologous responses. 
 
 ## Quick summary
 Look at the [notebook results](results/analysis_notebook.md) for an overview of the results.
