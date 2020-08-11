@@ -1,5 +1,9 @@
+---
+layout: default
+---
+
 # High-resolution mapping of the neutralizing and binding specificities of polyclonal rabbit serum elicited by HIV trimer immunizations
-Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah K. Hilton, Christopher Cottrell, P.J Klasse, John Moore, Andrew Ward, Jesse D. Bloom 
+Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah K. Hilton, Christopher Cottrell, P.J Klasse, John Moore, Andrew Ward, Jesse D. Bloom
 
 Below are links to interactive visualizations of the HIV mutational antigenic profiling of sera from rabbits vaccinated with BG505 trimers, enabled by [dms-view](https://dms-view.github.io/docs/). This data is posted in [this pre-print - broken link](link).
 
@@ -25,8 +29,8 @@ The site-metrics (dot plot) include:
 
 The mutation-metrics (logoplot) include
 
-- **diffsel**: All mutation differential selection values, including negative values, are plotted. 
-- **pos diffsel**: Only the mutations with positive differential selection values. 
+- **diffsel**: All mutation differential selection values, including negative values, are plotted.
+- **pos diffsel**: Only the mutations with positive differential selection values.
 
 Additionally,
 
