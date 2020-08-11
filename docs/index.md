@@ -15,14 +15,18 @@ For dms-view visualizations, logo plots are colored as in Figure 2 of the paper.
 
 The site-metrics (dot plot) include:
 
-- **positive diffsel**: The sum of all positive differential selection values at a site (site level). This gives a sense to the total amount of escape/selective pressure at each site.
-- **negative diffsel**: The sum of all negative differential selection values at a site (site level). This gives a sense for mutations that are depleted, rather than enriched, during serum selection relative to a non-selected control library. It is intriguing that many of these potential serum sensitizing mutations cluster and are consistent across sera.
-- **max diffsel**: The value of the largest effect mutation (largest mutation differential selection) at each site (site level).
+- **positive diffsel**: The sum of all positive differential selection values at a site. This gives a sense to the total amount of escape/selective pressure at each site.
+- **negative diffsel**: The sum of all negative differential selection values at a site. This gives a sense for mutations that are depleted, rather than enriched, during serum selection relative to a non-selected control library. It is intriguing that many of these potential serum sensitizing mutations cluster and are consistent across sera.
+- **max diffsel**: The value of the largest effect mutation (largest mutation differential selection) at each site. This gives a sense of the maximal effect of any mutation at each site.
+- **min diffsel**: The value of the smallest effect mutation (smalled mutation differential selection) at each site.
+- **abs diffsel**: The absolute value of all mutation differential selection values at each site.
+
+
 
 The mutation-metrics (logoplot) include
 
-- **diffsel**
-- **pos diffsel**: only the mutations with positive differential selection values. 
+- **diffsel**: All mutation differential selection values, including negative values, are plotted. 
+- **pos diffsel**: Only the mutations with positive differential selection values. 
 
 Additionally,
 
