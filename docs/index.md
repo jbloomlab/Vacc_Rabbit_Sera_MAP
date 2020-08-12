@@ -24,8 +24,8 @@ The site-metrics (dot plot) include:
 
 The mutation-metrics (logoplot) include
 
-- **diffsel**: All mutation differential selection values, including negative values, are plotted. 
-- **pos diffsel**: Only the mutations with positive differential selection values. 
+- **diffsel**: All mutation differential selection values, including negative values, are plotted.
+- **pos diffsel**: Only the mutations with positive differential selection values.
 
 Additionally,
 
