@@ -1,9 +1,9 @@
 # High-resolution mapping of the neutralizing and binding specificities of polyclonal rabbit serum elicited by HIV trimer immunizations
-Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah K. Hilton, Christopher Cottrell, P.J Klasse, John Moore, Andrew Ward, Jesse D. Bloom 
+Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah K. Hilton, Christopher Cottrell, P.J. Klasse, John Moore, Andrew Ward, Jesse D. Bloom 
 
 We performed mutational antigenic profiling of BG505 SOSIP trimer vaccinated rabbit serum, provided by John Moore and PJ Klasse. In collaboration with Payal Pratap and Adrew Ward's group, we also performed emPEM with these matched sera samples. This analysis focuses only on the mutational antigenic profiling data. 
 
-Our first mutational antigenic profiling analysis of escape from PGT151 using the BF520 env libraries was published [here](http://dx.doi.org/10.1016/j.chom.2017.05.003) in June 2017, and this original analysis is located [in this ipython notebook](https://github.com/adingens/BF520_MutationalAntigenicProfiling_PGT151). Here, we used BG505.T332N mutant Env libraries, first described and characterized in [Haddox, Dingens et al 2018](https://elifesciences.org/articles/34420). Note that this is matched to the BG505 immunogens, enabling profiling of autologous responses. 
+Here, we used BG505.T332N mutant Env libraries, first described and characterized in [Haddox, Dingens et al 2018](https://elifesciences.org/articles/34420). Note that this is matched to the BG505 immunogens, enabling profiling of autologous responses. 
 
 ## Quick summary
 Look at the [notebook results](results/analysis_notebook.md) for an overview of the results.
@@ -18,7 +18,7 @@ To run [analysis_notebook.ipynb](analysis_notebook.ipynb) and generate the [Mark
     
 On the Hutch cluster, you probably want to submit this job using [slurm](https://slurm.schedmd.com/), which you can simply do with:
 
-    sbatch -p largenode -c 16 --mem=100000 run_notebook.bash
+    sbatch --partition=campus-new -c 6 run_notebook.bash
 
 ## Configuring the analysis
 The configuration for the analysis is in a separate file, [config.yaml](config.yaml). 
@@ -30,21 +30,24 @@ The [config.yaml](config.yaml) file points to several files in the [./data/](dat
     For each serum there is an entry with the label used in the experiments, then:
       - *name*: a more informative name used when displaying results
       - *description*: description of the serum
-      - *group*: group of samples to which serum belong
-      - *species*: species from which serum is derived (if relevant)
-      - *vaccination*: information of vaccination status (if relevant)
+      - *group*: group of samples to which serum belong, based on preliminary point mutant mapping only
+      - *vaccination*:  timing of sera "pre" (wk0) or "post" vaccination
+      - *immunogen*: the BG505 SOSIP trimer version used as immunogen, and how many times it was administered
+      - *dilution*: the serum dilution used
 
   - [data/sample_list.csv](data/sample_list.csv):
     CSV file giving each sample that was deep sequenced.
     Columns are:
       - *sample*: sample label used in experiments
-      - *serum*: serum used for selection
-      - *library*: viral library, using simple 1, 2, 3 naming rather than the more confusing library codes used to label experiments
-      - *date*: day when sequencing was done
-      - *serum_dilution*: dilution of serum used; this includes the 1:4 dilution used during the RDE treatment of the serum. For antibodies, it is the concentration in ug/ml.
+      - *rabbit_id*: 4 digit rabbit ID
+      - *vaccine_status*: timing of sera "pre" (wk0) or "post" vaccination
+      - *library*: viral library
+      - *dilution*: dilution of serum used
+      - *fraction_infectivity*: fraction of viral library retaining infectivity
       - *percent_infectivity*: percent of viral library retaining infectivity
-      - *R1*: glob pattern to R1 FASTQ files on Hutch server; the R2 file names are guessed from the R1 names. If [config.yaml](config.yaml) sets *seq_data_source* to *R1* then there must be a valid R1 file glob for all samples; otherwise this column is ignored.
+      - *R1*: glob pattern to R1 FASTQ files on Hutch server; the R2 file names are guessed from the R1 names. If [config.yaml](config.yaml) sets *seq_data_source* to *R1* then there must be a valid R1 file glob for all samples; otherwise this column is ignored. UPDATE THIS!
       - *SRA_accession*: the accession number on the [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA) for the sequencing for this sample. If [config.yaml](config.yaml) sets *seq_data_source* to *SRA_accession* then there must be a valid accession for all samples; otherwise this column is ignored.
+  
   
   
 ## Results

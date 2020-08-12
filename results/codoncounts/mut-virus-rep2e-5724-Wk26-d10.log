@@ -1,0 +1,115 @@
+2020-08-12 13:13:57,654 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/adingens/2019/Vacc_Rabbit_Sera_MAP/FinalAnalysis/Vacc_Rabbit_Sera_MAP
+
+2020-08-12 13:13:57,655 - INFO - Progress is being logged to results/codoncounts/mut-virus-rep2e-5724-Wk26-d10.log
+2020-08-12 13:13:57,657 - INFO - Version information:
+	Time and date: Wed Aug 12 13:13:57 2020
+	Platform: Linux-4.15.0-101-generic-x86_64-with-debian-buster-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Jul  2 2019, 02:18:42)  [GCC 7.3.0]
+	dms_tools2 version: 2.6.6
+	Bio version: 1.74
+	pandas version: 0.25.3
+	numpy version: 1.17.0
+	IPython version: 7.12.0
+	jupyter version unknown
+	matplotlib version: 3.2.1
+	plotnine version: 0.6.0
+	natsort version: 6.0.0
+	pystan version: 2.19.0.0
+	scipy version: 1.4.1
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.8
+	statsmodels version: 0.10.1
+	rpy2 version: 3.1.0
+	regex version: 2.5.64
+	umi_tools version: 1.0.0
+
+2020-08-12 13:13:57,658 - INFO - Parsed the following arguments:
+	outdir = results/codoncounts
+	ncpus = -1
+	use_existing = yes
+	refseq = data/BG505.W6.C2.T332N_env.fasta
+	alignspecs = ['87,375,39,36', '376,666,36,39', '663,954,33,41', '955,1228,33,37', '1228,1527,34,35', '1527,1815,32,39', '1816,2098,36,41']
+	bclen = 8
+	fastqdir = results/FASTQ_files
+	R2 = None
+	R1trim = [200]
+	R2trim = [170]
+	bclen2 = None
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	sitemask = None
+	purgeread = 0.0
+	purgebc = 0.0
+	bcinfo = True
+	bcinfo_csv = True
+	name = mut-virus-rep2e-5724-Wk26-d10
+	R1 = ['mut-virus-rep2e-5724-Wk26-d10_R1.fastq.gz']
+
+2020-08-12 13:13:57,673 - INFO - Read refseq of 2583 codons from data/BG505.W6.C2.T332N_env.fasta
+2020-08-12 13:13:57,674 - INFO - Reads are in these FASTQ pairs:
+	results/FASTQ_files/mut-virus-rep2e-5724-Wk26-d10_R1.fastq.gz and results/FASTQ_files/mut-virus-rep2e-5724-Wk26-d10_R2.fastq.gz
+
+2020-08-12 13:13:57,674 - INFO - Now parsing read pairs...
+2020-08-12 13:14:04,803 - INFO - Reads parsed so far: 500000
+2020-08-12 13:14:11,088 - INFO - Reads parsed so far: 1000000
+2020-08-12 13:14:17,382 - INFO - Reads parsed so far: 1500000
+2020-08-12 13:14:23,811 - INFO - Reads parsed so far: 2000000
+2020-08-12 13:14:29,412 - INFO - Reads parsed so far: 2500000
+2020-08-12 13:14:35,077 - INFO - Reads parsed so far: 3000000
+2020-08-12 13:14:41,203 - INFO - Reads parsed so far: 3500000
+2020-08-12 13:14:48,260 - INFO - Reads parsed so far: 4000000
+2020-08-12 13:14:53,916 - INFO - Reads parsed so far: 4500000
+2020-08-12 13:14:55,129 - INFO - Parsed 4605911 reads, found 1204016 unique barcodes.
+2020-08-12 13:14:55,135 - INFO - Summary stats on reads:
+   total  fail filter  low Q barcode
+ 4605911            0         302246
+2020-08-12 13:14:55,135 - INFO - Writing these stats to results/codoncounts/mut-virus-rep2e-5724-Wk26-d10_readstats.csv
+
+2020-08-12 13:14:55,555 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            323202
+2                            153956
+3                            172003
+4                            168193
+5                            140540
+6                            101636
+7                             65304
+8                             38350
+9                             20539
+10                            10453
+11                             4976
+12                             2473
+13                             1193
+14                              596
+15                              295
+16                              139
+17                               74
+18                               54
+19                               17
+20                               15
+21                                4
+22                                2
+24                                1
+26                                1
+2020-08-12 13:14:55,555 - INFO - Writing these stats to results/codoncounts/mut-virus-rep2e-5724-Wk26-d10_readsperbc.csv
+
+2020-08-12 13:14:55,570 - INFO - Examining the 1204016 barcodes to build and align subamplicons...
+2020-08-12 13:15:14,030 - INFO - Barcodes examined so far: 200000
+2020-08-12 13:15:31,493 - INFO - Barcodes examined so far: 400000
+2020-08-12 13:15:48,094 - INFO - Barcodes examined so far: 600000
+2020-08-12 13:16:03,553 - INFO - Barcodes examined so far: 800000
+2020-08-12 13:16:16,501 - INFO - Barcodes examined so far: 1000000
+2020-08-12 13:16:23,435 - INFO - Barcodes examined so far: 1200000
+2020-08-12 13:16:23,483 - INFO - Examined all barcodes. Summary stats:
+   total  too few reads  not alignable  aligned
+ 1204016         323202          80546   800268
+2020-08-12 13:16:23,483 - INFO - Writing these stats to results/codoncounts/mut-virus-rep2e-5724-Wk26-d10_bcstats.csv
+
+2020-08-12 13:16:23,502 - INFO - Writing the counts of each codon identity at each site to results/codoncounts/mut-virus-rep2e-5724-Wk26-d10_codoncounts.csv
+
+2020-08-12 13:16:23,552 - INFO - Successful completion of dms2_bcsubamp

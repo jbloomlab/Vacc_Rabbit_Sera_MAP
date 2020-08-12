@@ -1,0 +1,34 @@
+#now, we will take picture after coloring the structure
+
+#with transparent monomer on the right (face1)
+cmd.set_view ("""\
+    -0.998258173,   -0.031574555,   -0.049748860,\
+     0.058407415,   -0.418731570,   -0.906220555,\
+     0.007780684,   -0.907557607,    0.419846058,\
+     0.000000000,   -0.000000000, -159.917800903,\
+    37.354129791,   20.422164917,    9.845775604,\
+    75.661766052,  244.173889160,  -20.000000000 """)
+
+
+cmd.set('transparency', '1', structure)
+
+#make 2 of 3 monomers grey
+
+
+
+#highlight sets of sites with spheres
+cmd.select('241hole_epitope', 'resi 84,85,86,87,88,89,90,91,229,230,231,232,240,241,242,243,268,289,290,291,347,629')
+cmd.show('spheres', '241hole_epitope')
+
+
+
+
+take_pictures = True
+if take_pictures:
+    cmd.set("use_shaders")
+    cmd.bg_color('white')
+    cmd.png('{0}_5YFL_pymol_241hole.png'.format(abname), width=1000, dpi=2000)#, ray=1)
+
+
+
+cmd.select(None) #I think its good to include this?

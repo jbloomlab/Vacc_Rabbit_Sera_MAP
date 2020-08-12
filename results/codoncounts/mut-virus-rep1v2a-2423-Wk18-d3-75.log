@@ -1,0 +1,97 @@
+2020-08-12 13:18:43,374 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/adingens/2019/Vacc_Rabbit_Sera_MAP/FinalAnalysis/Vacc_Rabbit_Sera_MAP
+
+2020-08-12 13:18:43,374 - INFO - Progress is being logged to results/codoncounts/mut-virus-rep1v2a-2423-Wk18-d3-75.log
+2020-08-12 13:18:43,379 - INFO - Version information:
+	Time and date: Wed Aug 12 13:18:43 2020
+	Platform: Linux-4.15.0-101-generic-x86_64-with-debian-buster-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Jul  2 2019, 02:18:42)  [GCC 7.3.0]
+	dms_tools2 version: 2.6.6
+	Bio version: 1.74
+	pandas version: 0.25.3
+	numpy version: 1.17.0
+	IPython version: 7.12.0
+	jupyter version unknown
+	matplotlib version: 3.2.1
+	plotnine version: 0.6.0
+	natsort version: 6.0.0
+	pystan version: 2.19.0.0
+	scipy version: 1.4.1
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.8
+	statsmodels version: 0.10.1
+	rpy2 version: 3.1.0
+	regex version: 2.5.64
+	umi_tools version: 1.0.0
+
+2020-08-12 13:18:43,379 - INFO - Parsed the following arguments:
+	outdir = results/codoncounts
+	ncpus = -1
+	use_existing = yes
+	refseq = data/BG505.W6.C2.T332N_env.fasta
+	alignspecs = ['87,375,39,36', '376,666,36,39', '663,954,33,41', '955,1228,33,37', '1228,1527,34,35', '1527,1815,32,39', '1816,2098,36,41']
+	bclen = 8
+	fastqdir = results/FASTQ_files
+	R2 = None
+	R1trim = [200]
+	R2trim = [170]
+	bclen2 = None
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	sitemask = None
+	purgeread = 0.0
+	purgebc = 0.0
+	bcinfo = True
+	bcinfo_csv = True
+	name = mut-virus-rep1v2a-2423-Wk18-d3-75
+	R1 = ['mut-virus-rep1v2a-2423-Wk18-d3-75_R1.fastq.gz']
+
+2020-08-12 13:18:43,397 - INFO - Read refseq of 2583 codons from data/BG505.W6.C2.T332N_env.fasta
+2020-08-12 13:18:43,398 - INFO - Reads are in these FASTQ pairs:
+	results/FASTQ_files/mut-virus-rep1v2a-2423-Wk18-d3-75_R1.fastq.gz and results/FASTQ_files/mut-virus-rep1v2a-2423-Wk18-d3-75_R2.fastq.gz
+
+2020-08-12 13:18:43,398 - INFO - Now parsing read pairs...
+2020-08-12 13:18:50,119 - INFO - Reads parsed so far: 500000
+2020-08-12 13:18:56,330 - INFO - Reads parsed so far: 1000000
+2020-08-12 13:19:02,301 - INFO - Reads parsed so far: 1500000
+2020-08-12 13:19:08,468 - INFO - Reads parsed so far: 2000000
+2020-08-12 13:19:12,689 - INFO - Parsed 2278127 reads, found 1525325 unique barcodes.
+2020-08-12 13:19:12,708 - INFO - Summary stats on reads:
+   total  fail filter  low Q barcode
+ 2278127            0          63921
+2020-08-12 13:19:12,708 - INFO - Writing these stats to results/codoncounts/mut-virus-rep1v2a-2423-Wk18-d3-75_readstats.csv
+
+2020-08-12 13:19:13,173 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                           1032623
+2                            343620
+3                            111920
+4                             29076
+5                              6579
+6                              1231
+7                               224
+8                                39
+9                                12
+10                                1
+2020-08-12 13:19:13,173 - INFO - Writing these stats to results/codoncounts/mut-virus-rep1v2a-2423-Wk18-d3-75_readsperbc.csv
+
+2020-08-12 13:19:13,186 - INFO - Examining the 1525325 barcodes to build and align subamplicons...
+2020-08-12 13:19:23,811 - INFO - Barcodes examined so far: 200000
+2020-08-12 13:19:36,078 - INFO - Barcodes examined so far: 400000
+2020-08-12 13:19:47,136 - INFO - Barcodes examined so far: 600000
+2020-08-12 13:19:56,245 - INFO - Barcodes examined so far: 800000
+2020-08-12 13:20:03,614 - INFO - Barcodes examined so far: 1000000
+2020-08-12 13:20:09,548 - INFO - Barcodes examined so far: 1200000
+2020-08-12 13:20:14,109 - INFO - Barcodes examined so far: 1400000
+2020-08-12 13:20:15,899 - INFO - Examined all barcodes. Summary stats:
+   total  too few reads  not alignable  aligned
+ 1525325        1032623          46043   446659
+2020-08-12 13:20:15,899 - INFO - Writing these stats to results/codoncounts/mut-virus-rep1v2a-2423-Wk18-d3-75_bcstats.csv
+
+2020-08-12 13:20:15,926 - INFO - Writing the counts of each codon identity at each site to results/codoncounts/mut-virus-rep1v2a-2423-Wk18-d3-75_codoncounts.csv
+
+2020-08-12 13:20:15,971 - INFO - Successful completion of dms2_bcsubamp

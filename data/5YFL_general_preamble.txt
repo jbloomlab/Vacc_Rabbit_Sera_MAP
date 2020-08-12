@@ -1,0 +1,35 @@
+# this script loads the 5YFL BG505 structure and colors it according fraction surviving for each antibody, then takes a picture. 
+# Imports
+import pymol
+from pymol import cmd
+
+# Fetch structure
+structure = '5FYL'
+cmd.reinitialize()
+cmd.delete('all')
+cmd.fetch(structure) #, type='pdb1')
+
+# Remove non-Env chains
+# gp41 = chain B
+# gp120 = chain G
+# 35O22 = chains D and E
+# PGT122 = chains H and L
+cmd.remove ('c;D,E,H,L,U,V')
+
+# Generate symmetry partners based on crystal structure
+cmd.symexp(structure, structure, structure, 3)
+
+# Tweak initial display and color of Env monomers
+cmd.hide('everything')
+cmd.bg_color('white')
+##cmd.show('cartoon')
+cmd.show('surface')
+cmd.show('cartoon')
+cmd.color('white')
+#cmd.hide('surface', structure)
+cmd.color('grey40', structure)
+cmd.set('cartoon_transparency', '0.5')
+cmd.set('cartoon_transparency', '0', structure)
+#cmd.set('transparency', '1', structure) #this line makes one of the monomers surface transparent
+
+cmd.set('specular', "off")

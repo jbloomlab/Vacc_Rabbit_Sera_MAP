@@ -1,0 +1,297 @@
+# Information about each antibody sample.
+# For each sample ID, give name and description.
+# If relevant, also give species and vaccination (or infection) info.
+
+#------------------------------
+# Controls:
+
+mock:
+  name: no-antibody
+  description: no-antibody control
+  group: mock
+
+plasmid:
+  name: plasmid
+  description: plasmid used as control to estimate sequencing error rate
+  group: plasmid
+
+#------------------------------
+# rabbit serum samples
+
+BG5-M2E-5724-Wk26-d10: 
+  name: 5724-Wk26-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 10
+  
+BG5-M2E-5724-Wk26-d30: 
+  name: 5724-Wk26-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 30
+  
+BG5-M2E-5724-Wk0-d30: 
+  name: 5724-Wk0-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre
+  group: C3/465
+  immunogen:
+  dilution: 30
+  
+BG5-M2E-5727-Wk26-d10: 
+  name: 5727-Wk26-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 10
+  
+BG5-M2E-5727-Wk0-d10: 
+  name: 5727-Wk0-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre
+  group: mainly 465
+  immunogen:
+  dilution: 10
+  
+BG5-M2E-2124-Wk22-d10: 
+  name: 2124-Wk22-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen: BG505 SOSIP.664 x 3
+  dilution: 10
+  
+BG5-M2E-2124-Wk22-d30: 
+  name: 2124-Wk22-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen: BG505 SOSIP.664 x 3
+  dilution: 30
+  
+BG5-M2E-2124-Wk0-d10: 
+  name: 2124-Wk0-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen:
+  dilution: 10
+  
+BG5-M2E-2124-Wk0-d30: 
+  name: 2124-Wk0-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen:
+  dilution: 30
+  
+BG5-M2E-2214-Wk43-d10: 
+  name: 2214-Wk43-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: double epitope cluster
+  immunogen: BG505 SOSIP.v4.1 x 4
+  dilution: 10
+  
+BG5-M2E-2214-Wk0-d10: 
+  name: 2214-Wk0-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre
+  group: double epitope cluster
+  immunogen:
+  dilution: 10
+  
+BG5-M2E-2423-Wk18-d10: 
+  name: 2423-Wk18-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 241/289
+  immunogen: BG505 SOSIP.v4.1 x 3
+  dilution: 10
+  
+BG5-M2E-2423-Wk18-d30: 
+  name: 2423-Wk18-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 241/289
+  immunogen: BG505 SOSIP.v4.1 x 3
+  dilution: 30
+  
+BG5-M2E-2423-Wk0-d10: 
+  name: 2423-Wk0-d10 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre
+  group: mainly 241/289
+  immunogen:
+  dilution: 10
+  
+BG5-M2E-2425-Wk18-d30: 
+  name: 2425-Wk18-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.v4.1 x 3
+  dilution: 30
+  
+BG5-M2E-2425-Wk0-d30: 
+  name: 2425-Wk0-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre 
+  group: C3/465
+  immunogen:
+  dilution: 30
+  
+BG5-M2E-5724-Wk26-d77: 
+  name: 5724-Wk26-d77 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 77
+  
+  
+  
+BG5-M3E-5724-Wk26-d30: 
+  name: 5724-Wk26-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 30
+  
+BG5-M3E-2425-Wk18-d20: 
+  name: 2425-Wk18-d20 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: pre 
+  group: C3/465
+  immunogen:
+  dilution: 20
+  
+BG5-M3E-2423-Wk18-d5: 
+  name: 2423-Wk18-d5 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 241/289
+  immunogen: BG505 SOSIP.v4.1 x 3
+  dilution: 5
+  
+BG5-M3E-2214-Wk43-d5: 
+  name: 2214-Wk43-d5 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: double epitope cluster
+  immunogen: BG505 SOSIP.v4.1 x 4
+  dilution: 5
+  
+BG5-M3E-2214-Wk43-d3-75: 
+  name: 2214-Wk43-d3.75 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: double epitope cluster
+  immunogen: BG505 SOSIP.v4.1 x 4
+  dilution: 3.75
+  
+BG5-M3E-5727-Wk26-d3-75: 
+  name: 5727-Wk26-d3.75 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 3.75
+  
+BG5-M3E-2124-Wk22-d3-75: 
+  name: 2124-Wk22-d3.75 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen: BG505 SOSIP.664 x 3
+  dilution: 3.75
+  
+BG5-M1v2A-5724-Wk26-d20: 
+  name: 5724-Wk26-d20 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.664 x 4
+  dilution: 20
+  
+BG5-M1v2A-5727-Wk26-d4: 
+  name: 5727-Wk26-d4 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 465
+  immunogen: BG505 SOSIP.664 x 4 
+  dilution: 4
+
+BG5-M1v2A-2124-Wk22-d5: 
+  name: 2124-Wk22-d5 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen: BG505 SOSIP.664 x 3
+  dilution: 5
+  
+BG5-M1v2A-2124-Wk22-d7-5: 
+  name: 2124-Wk22-d7.5 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: Weak 241/289 effect, nearly pan-resistant
+  immunogen: BG505 SOSIP.664 x 3
+  dilution: 7.5
+  
+BG5-M1v2A-2214-Wk43-d2-5: 
+  name: 2214-Wk43-d2.5 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: double epitope cluster
+  immunogen: BG505 SOSIP.v4.1 x 4
+  dilution: 2.5
+  
+BG5-M1v2A-2214-Wk43-d4: 
+  name: 2214-Wk43-d4 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: double epitope cluster
+  immunogen: BG505 SOSIP.v4.1 x 4 
+  dilution: 4
+  
+BG5-M1v2A-2214-Wk43-d6: 
+  name: 2214-Wk43-d6 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: double epitope cluster
+  immunogen: BG505 SOSIP.v4.1 x 4
+  dilution: 6
+  
+BG5-M1v2A-2423-Wk18-d2-5: 
+  name: 2423-Wk18-d2.5 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 241/289
+  immunogen: BG505 SOSIP.v4.1 x 3
+  dilution: 2.5
+  
+BG5-M1v2A-2423-Wk18-d3-75: 
+  name: 2423-Wk18-d3.75 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: mainly 241/289
+  immunogen: BG505 SOSIP.v4.1 x 3 
+  dilution: 3.75
+  
+BG5-M1v2A-2425-Wk18-d30: 
+  name: 2425-Wk18-d30 # display name
+  description: rabbit sera provided by John Moore. et al, vaccinated with BG505 trimer
+  vaccination: post
+  group: C3/465
+  immunogen: BG505 SOSIP.v4.1 x 3 
+  dilution: 30
+
+# mAb and pooled sera samples 
+
+  

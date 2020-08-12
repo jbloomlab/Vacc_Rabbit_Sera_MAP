@@ -1,0 +1,77 @@
+2020-08-12 15:52:12,299 - INFO - Beginning execution of dms2_batch_diffsel in directory /fh/fast/bloom_j/computational_notebooks/adingens/2019/Vacc_Rabbit_Sera_MAP/FinalAnalysis/Vacc_Rabbit_Sera_MAP
+
+2020-08-12 15:52:12,300 - INFO - Progress is being logged to results/diffsel/summary.log
+2020-08-12 15:52:12,307 - INFO - Version information:
+	Time and date: Wed Aug 12 15:52:12 2020
+	Platform: Linux-4.15.0-101-generic-x86_64-with-debian-buster-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Jul  2 2019, 02:18:42)  [GCC 7.3.0]
+	dms_tools2 version: 2.6.6
+	Bio version: 1.74
+	pandas version: 0.25.3
+	numpy version: 1.17.0
+	IPython version: 7.12.0
+	jupyter version unknown
+	matplotlib version: 3.2.1
+	plotnine version: 0.6.0
+	natsort version: 6.0.0
+	pystan version: 2.19.0.0
+	scipy version: 1.4.1
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.8
+	statsmodels version: 0.10.1
+	rpy2 version: 3.1.0
+	regex version: 2.5.64
+	umi_tools version: 1.0.0
+
+2020-08-12 15:52:12,307 - INFO - Parsed the following arguments:
+	outdir = results/diffsel
+	ncpus = 16
+	use_existing = yes
+	indir = results/renumbered_codoncounts
+	chartype = codon_to_aa
+	excludestop = yes
+	pseudocount = 5
+	mincount = 0
+	batchfile = results/diffsel/batch.csv
+	summaryprefix = summary
+
+2020-08-12 15:52:12,307 - INFO - Parsing info from results/diffsel/batch.csv
+2020-08-12 15:52:12,323 - INFO - Read the following sample information:
+group,name,sel,mock,err,mds_name
+2124-Wk0,rep2e-d10,mut-virus-rep2e-2124-Wk0-d10,mut-virus-rep2e,wt-DNA-rep2,2124-Wk0-rep2e-d10
+2124-Wk0,rep2e-d30,mut-virus-rep2e-2124-Wk0-d30,mut-virus-rep2e,wt-DNA-rep2,2124-Wk0-rep2e-d30
+2124-Wk22,rep2e-d10,mut-virus-rep2e-2124-Wk22-d10,mut-virus-rep2e,wt-DNA-rep2,2124-Wk22-rep2e-d10
+2124-Wk22,rep2e-d30,mut-virus-rep2e-2124-Wk22-d30,mut-virus-rep2e,wt-DNA-rep2,2124-Wk22-rep2e-d30
+2214-Wk0,rep2e-d10,mut-virus-rep2e-2214-Wk0-d10,mut-virus-rep2e,wt-DNA-rep2,2214-Wk0-rep2e-d10
+2214-Wk43,rep2e-d10,mut-virus-rep2e-2214-Wk43-d10,mut-virus-rep2e,wt-DNA-rep2,2214-Wk43-rep2e-d10
+2423-Wk0,rep2e-d10,mut-virus-rep2e-2423-Wk0-d10,mut-virus-rep2e,wt-DNA-rep2,2423-Wk0-rep2e-d10
+2423-Wk18,rep2e-d10,mut-virus-rep2e-2423-Wk18-d10,mut-virus-rep2e,wt-DNA-rep2,2423-Wk18-rep2e-d10
+2423-Wk18,rep2e-d30,mut-virus-rep2e-2423-Wk18-d30,mut-virus-rep2e,wt-DNA-rep2,2423-Wk18-rep2e-d30
+2425-Wk0,rep2e-d30,mut-virus-rep2e-2425-Wk0-d30,mut-virus-rep2e,wt-DNA-rep2,2425-Wk0-rep2e-d30
+2425-Wk18,rep2e-d30,mut-virus-rep2e-2425-Wk18-d30,mut-virus-rep2e,wt-DNA-rep2,2425-Wk18-rep2e-d30
+5724-Wk0,rep2e-d30,mut-virus-rep2e-5724-Wk0-d30,mut-virus-rep2e,wt-DNA-rep2,5724-Wk0-rep2e-d30
+5724-Wk26,rep2e-d10,mut-virus-rep2e-5724-Wk26-d10,mut-virus-rep2e,wt-DNA-rep2,5724-Wk26-rep2e-d10
+5724-Wk26,rep2e-d30,mut-virus-rep2e-5724-Wk26-d30,mut-virus-rep2e,wt-DNA-rep2,5724-Wk26-rep2e-d30
+5724-Wk26,rep2e-d77,mut-virus-rep2e-5724-Wk26-d77,mut-virus-rep2e,wt-DNA-rep2,5724-Wk26-rep2e-d77
+5727-Wk0,rep2e-d10,mut-virus-rep2e-5727-Wk0-d10,mut-virus-rep2e,wt-DNA-rep2,5727-Wk0-rep2e-d10
+5727-Wk26,rep2e-d10,mut-virus-rep2e-5727-Wk26-d10,mut-virus-rep2e,wt-DNA-rep2,5727-Wk26-rep2e-d10
+2124-Wk22,rep3e-d3-75,mut-virus-rep3e-2124-Wk22-d3-75,mut-virus-rep3e,wt-DNA-rep3,2124-Wk22-rep3e-d3-75
+2214-Wk43,rep3e-d3-75,mut-virus-rep3e-2214-Wk43-d3-75,mut-virus-rep3e,wt-DNA-rep3,2214-Wk43-rep3e-d3-75
+2214-Wk43,rep3e-d5,mut-virus-rep3e-2214-Wk43-d5,mut-virus-rep3e,wt-DNA-rep3,2214-Wk43-rep3e-d5
+2423-Wk18,rep3e-d5,mut-virus-rep3e-2423-Wk18-d5,mut-virus-rep3e,wt-DNA-rep3,2423-Wk18-rep3e-d5
+2425-Wk18,rep3e-d20,mut-virus-rep3e-2425-Wk18-d20,mut-virus-rep3e,wt-DNA-rep3,2425-Wk18-rep3e-d20
+5724-Wk26,rep3e-d30,mut-virus-rep3e-5724-Wk26-d30,mut-virus-rep3e,wt-DNA-rep3,5724-Wk26-rep3e-d30
+5727-Wk26,rep3e-d3-75,mut-virus-rep3e-5727-Wk26-d3-75,mut-virus-rep3e,wt-DNA-rep3,5727-Wk26-rep3e-d3-75
+2124-Wk22,rep1v2a-d5,mut-virus-rep1v2a-2124-Wk22-d5,mut-virus-rep1v2a,wt-DNA-rep1,2124-Wk22-rep1v2a-d5
+2124-Wk22,rep1v2a-d7-5,mut-virus-rep1v2a-2124-Wk22-d7-5,mut-virus-rep1v2a,wt-DNA-rep1,2124-Wk22-rep1v2a-d7-5
+2214-Wk43,rep1v2a-d2-5,mut-virus-rep1v2a-2214-Wk43-d2-5,mut-virus-rep1v2a,wt-DNA-rep1,2214-Wk43-rep1v2a-d2-5
+2214-Wk43,rep1v2a-d4,mut-virus-rep1v2a-2214-Wk43-d4,mut-virus-rep1v2a,wt-DNA-rep1,2214-Wk43-rep1v2a-d4
+2214-Wk43,rep1v2a-d6,mut-virus-rep1v2a-2214-Wk43-d6,mut-virus-rep1v2a,wt-DNA-rep1,2214-Wk43-rep1v2a-d6
+2423-Wk18,rep1v2a-d2-5,mut-virus-rep1v2a-2423-Wk18-d2-5,mut-virus-rep1v2a,wt-DNA-rep1,2423-Wk18-rep1v2a-d2-5
+2423-Wk18,rep1v2a-d3-75,mut-virus-rep1v2a-2423-Wk18-d3-75,mut-virus-rep1v2a,wt-DNA-rep1,2423-Wk18-rep1v2a-d3-75
+2425-Wk18,rep1v2a-d30,mut-virus-rep1v2a-2425-Wk18-d30,mut-virus-rep1v2a,wt-DNA-rep1,2425-Wk18-rep1v2a-d30
+5724-Wk26,rep1v2a-d20,mut-virus-rep1v2a-5724-Wk26-d20,mut-virus-rep1v2a,wt-DNA-rep1,5724-Wk26-rep1v2a-d20
+5727-Wk26,rep1v2a-d4,mut-virus-rep1v2a-5727-Wk26-d4,mut-virus-rep1v2a,wt-DNA-rep1,5727-Wk26-rep1v2a-d4
+
+
+2020-08-12 15:52:12,584 - INFO - Output summary files already exist and '--use_existing' is 'yes', so exiting with no further action.

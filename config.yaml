@@ -1,0 +1,54 @@
+# configuration file
+
+# information on sera and samples
+serum_info: data/serum_info.yaml 
+sample_list: data/sample_list.csv 
+
+# wildtype sequence, and map of sequential to standard HXB2 Env numbering
+refseq: data/BG505.W6.C2.T332N_env.fasta
+renumbering_scheme: data/BG505_to_HXB2_new.csv
+
+# where to get the sequencing data,
+# can be either *SRA_accession* or *R1*
+seq_data_source: SRA_accession 
+
+# The following arguments are needed only if `seq_data_source`
+# is `SRA_accession`:
+fastq_dir: results/FASTQ_files  
+fastq_dump: fastq-dump  # path to fastq-dump
+# Next two arguments give paths for Aspera download program / key on Hutch
+# server; you will need to update with paths for your computer. If you
+# want to use fastq-dump for downloads (slower) set both of these to "null"
+ascp: null # /app/aspera-connect/3.7.5/bin/ascp #UPDATE
+asperakey: null # /app/aspera-connect/3.7.5/etc/asperaweb_id_dsa.openssh 
+
+# alignment specs for barcoded subamplicon sequencing:
+# https://jbloomlab.github.io/dms_tools2/bcsubamp.html
+alignspecs: >- 
+              87,375,39,36
+              376,666,36,39
+              663,954,33,41
+              955,1228,33,37
+              1228,1527,34,35
+              1527,1815,32,39
+              1816,2098,36,41
+              
+R1trim: 200
+R2trim: 170
+
+# max number of cpus to use
+ncpus: 16
+
+# Should dms_tools2 programs use existing output if it exists?
+use_existing: 'yes'
+
+# Do we average across replicates using "mean" or "median"?
+avg_type: median
+
+# names of results directories
+countsdir: results/codoncounts  # counts of mutations
+renumbcountsdir: results/renumbered_codoncounts  # counts w/ renumbered sites
+diffseldir: results/diffsel  # diffsel for all samples
+avgdiffseldir: results/diffsel  # diffsel average across libraries
+avgdiffsel_zoom_dir: results/diffsel/zoom  # zoom of average diffsel
+avgdiffsel_full_dir: results/diffsel/full_logo_plots  # full logo plots of average diffsel

@@ -1,0 +1,32 @@
+#now, we will take picture after coloring the structure
+
+#with transparent monomer on the right (face1)
+cmd.set_view ("""\
+    -0.483560741,    0.474492460,   -0.735538602,\
+     0.763113499,   -0.183060750,   -0.619779885,\
+    -0.428729713,   -0.861006498,   -0.273577541,\
+     0.000000000,    0.000000000,  -90.152717590,\
+    10.823820114,   20.754615784,  -15.079681396,\
+     5.896557331,  174.408798218,  -20.000000000 """)
+
+
+cmd.set('transparency', '1', structure)
+
+#make 2 of 3 monomers grey
+
+
+
+#highlight sets of sites with spheres
+cmd.select('C3_epitope', 'resi 350,351,352,353,354,355,356,357,358,359,360,396,459,460,461,462,463,464,465,466,467')
+cmd.show('spheres', 'C3_epitope')
+
+
+take_pictures = True
+if take_pictures:
+    cmd.set("use_shaders")
+    cmd.bg_color('white')
+    cmd.png('{0}_5YFL_pymol_C3465Zoom.png'.format(abname), width=1000, dpi=2000)#, ray=1)
+
+
+
+cmd.select(None) #I think its good to include this?
