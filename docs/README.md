@@ -13,7 +13,7 @@ There are two files you need to create the website.
 
 [`./index.md`](./index.md): A markdown file where you will create the content for the website.  
 
-[`./_config.yml`](./_config.yml): A yaml file to set some website attributes. Make sure you change the information to match the information of your new project. *importantly*, the baseurl field should be should be "/<repo name>" and the url field should be an empty string, "".
+[`./_config.yml`](./_config.yml): A yaml file to set some website attributes. Make sure you change the information to match the information of your new project. *importantly*, the baseurl field should be should be "/repo_name" and the url field should be an empty string, "".
 
 ## 3. Turn on `GitHub pages`
 
