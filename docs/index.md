@@ -1,6 +1,6 @@
 # High-resolution mapping of the neutralizing and binding specificities of polyclonal rabbit serum elicited by HIV trimer immunizations
 
-Below are links to interactive visualizations of the HIV mutational antigenic profiling of sera from rabbits vaccinated with BG505 trimers, enabled by [dms-view](https://dms-view.github.io/docs/). These data are posted in [this pre-print - broken link](link).
+Below are links to interactive visualizations of the HIV mutational antigenic profiling of sera from rabbits vaccinated with BG505 trimers, enabled by [dms-view](https://dms-view.github.io/docs/). These data are described in [this paper by Dingens et al](https://www.biorxiv.org/content/10.1101/2020.10.21.348623v1).
 
 [Figure 2 - Plotting both the glycan hole and C3/V5 epitopes](https://dms-view.github.io/?markdown-url=https%3A%2F%2Fraw.githubusercontent.com%2Fdms-view%2FHIV%2Fmaster%2Fdata%2FEnv%2FDingens2020%2FDingens2020.md&data-url=https%3A%2F%2Fraw.githubusercontent.com%2Fdms-view%2FHIV%2Fmaster%2Fdata%2FEnv%2FDingens2020%2FDingens2020.csv&condition=2124-Wk22&site_metric=site_positive+diffsel&mutation_metric=mut_pos+mutdiffsel&selected_sites=84%2C85%2C86%2C87%2C88%2C89%2C90%2C229%2C230%2C231%2C240%2C241%2C242%2C243%2C268%2C289%2C290%2C291%2C347%2C350%2C351%2C352%2C353%2C354%2C355%2C356%2C357%2C358%2C359%2C360%2C396%2C459%2C460%2C461%2C462%2C463%2C464%2C465%2C466%2C467%2C629&pdb-url=https%3A%2F%2Fraw.githubusercontent.com%2Fdms-view%2FHIV%2Fmaster%2Fdata%2FEnv%2FDingens2020%2F5fyl_trimer_renumber.pdb)
 

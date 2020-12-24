@@ -1,5 +1,9 @@
 # High-resolution mapping of the neutralizing and binding specificities of polyclonal rabbit serum elicited by HIV trimer immunizations
-Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah K. Hilton, Christopher Cottrell, P.J. Klasse, John Moore, Andrew Ward, Jesse D. Bloom 
+
+This repository holds the code and data for the data [described in this paper](https://www.biorxiv.org/content/10.1101/2020.10.21.348623v1).
+An interactive visualizaton of the data is [here](https://jbloomlab.github.io/Vacc_Rabbit_Sera_MAP/).
+
+Study by Adam S. Dingens, Payal Pratap, Keara Malone, Thomas Ketas, Sarah K. Hilton, Christopher Cottrell, P.J. Klasse, John Moore, Andrew Ward, Jesse D. Bloom 
 
 We performed mutational antigenic profiling of BG505 SOSIP trimer vaccinated rabbit serum, provided by John Moore and PJ Klasse. In collaboration with Payal Pratap and Adrew Ward's group, we also performed emPEM with these matched sera samples. This analysis focuses only on the mutational antigenic profiling data. 
 
